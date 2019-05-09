@@ -15,12 +15,6 @@ public class FThread extends Thread {
     public void run() {
 
         Random rand = new Random();
-       /*
-        try {
-            sleep(delay.longValue());
-        } catch (InterruptedException ie){
-
-        }*/
 
         while (true){
             //wait until G has been printed

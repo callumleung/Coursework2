@@ -10,21 +10,16 @@ public class HThread extends Thread{
     }
 
     public void run(){
-        Double delay = Math.random();
         Random rand = new Random();
 
-      /*  try {
-            sleep(delay.longValue());
-        } catch (InterruptedException ie){
-
-        }*/
-
+        //wait a random amount of time
         while(true){
             try {
                 sleep(rand.nextInt(100));
             } catch (InterruptedException ie){
 
             }
+            //print H and increase the semaphore
             System.out.println("H");
             HCount.V();
         }
